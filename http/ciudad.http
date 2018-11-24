@@ -1,1 +1,21 @@
 http://localhost:3000/ciudades
+###
+POST http://localhost:3000/ciudades HTTP/1.1
+content-type: application/json
+
+{
+	"nombre": "Cristian Paniagua 222",
+	"imagenUrl": "https://cdn-images-1.medium.com/max/1600/1*22I1ecGbrdPjGuKYTvkdWw.png",
+	"activo": 1
+}
+###
+PUT http://localhost:3000/ciudades/1 HTTP/1.1
+content-type: application/json
+
+{
+	"nombre": "Cristian Paniagua update",
+	"imagenUrl": "https://cdn-images-1.medium.com/max/1600/1*22I1ecGbrdPjGuKYTvkdWw.png",
+	"activo": 1
+}
+###
+DELETE http://localhost:3000/ciudades/1

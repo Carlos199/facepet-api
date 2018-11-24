@@ -1,4 +1,4 @@
-const Ciudad = require('../model').Ciudad;
+const Ciudad = require('../models').Ciudad;
 
 module.exports = {
     //Get all

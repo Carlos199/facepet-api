@@ -1,25 +1,44 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Evento = sequelize.define('Evento', {
-    fecha: DataTypes.DATE,
+    fecha: {
+      defaultValue: Date.now(),
+      type: DataTypes.DATE
+    },
+    // defaultValue: Sequelize.fn('NOW'),
     ciudadId: {
+      allowNull: false,
       type: DataTypes.INTEGER,
       field: "ciudad_id"
     },
     usuarioId: {
+      allowNull: false,
       type: DataTypes.INTEGER,
       field: "usuario_id"
     },
-    nombre: DataTypes.STRING,
-    descripcion: DataTypes.STRING,
+    nombre: {
+      allowNull: false,
+      type: DataTypes.STRING
+    },
+    descripcion: {
+      allowNull: false,
+      type: DataTypes.STRING
+    },
     latitud: DataTypes.DECIMAL,
     longitud: DataTypes.DECIMAL,
     imagenUrl: {
+      allowNull: false,
       type: DataTypes.TEXT,
       field: "imagen_url"
     },
-    situacion: DataTypes.INTEGER,
-    activo: DataTypes.INTEGER
+    situacion: {
+      defaultValue: 0,
+      type: DataTypes.INTEGER
+    },
+    activo: {
+      defaultValue: 1,
+      type: DataTypes.INTEGER
+    },
   }, {
     timestamps: false,
     tableName: 'eventos',

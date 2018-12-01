@@ -1,0 +1,27 @@
+http://localhost:3000/usuarios
+###
+POST http://localhost:3000/usuarios HTTP/1.1
+content-type: application/json
+
+{
+	"nombre": "cristianpy",
+	"correo": "cristianramonpaniagua@gmail.com",
+	"clave": "soylindo",
+	"celular": "097346966",
+	"ciudadId": 1,
+	"activo": 1
+}
+###
+PUT http://localhost:3000/usuarios/1 HTTP/1.1
+content-type: application/json
+
+{
+	"nombre": "cristianpy edit",
+	"correo": "cristianramonpaniagua@gmail.com",
+	"clave": "soylindo",
+	"celular": "097346966",
+	"ciudadId": 1,
+	"activo": 1
+}
+###
+DELETE http://localhost:3000/usuarios/1

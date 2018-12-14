@@ -5,7 +5,7 @@ content-type: application/json
 
 {
 	"ciudadId": 1,
-	"usuario": 1,
+	"usuarioId": 1,
 	"latitud": -25.98985,
 	"longitud": -24.98985,
 	"nombre": "Perro viralata perdido",
@@ -18,7 +18,7 @@ content-type: application/json
 
 {
 	"ciudadId": 1,
-	"usuario": 1,
+	"usuarioId": 1,
 	"latitud": -25.98985,
 	"longitud": -24.98985,
 	"nombre": "Perro viralata perdido edit",

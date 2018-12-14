@@ -2,9 +2,10 @@
 module.exports = (sequelize, DataTypes) => {
   const Evento = sequelize.define('Evento', {
     fecha: {
-      defaultValue: Date.now(),
+      defaultValue: new Date().toLocaleString('es-PY', {timeZone: 'America/Mexico_city'}),
       type: DataTypes.DATE
     },
+    
     // defaultValue: Sequelize.fn('NOW'),
     ciudadId: {
       allowNull: false,

@@ -35,8 +35,8 @@ models.sequelize
     .catch(function(error) {
         console.log('Error creating connection');
     });
-// Config zone
-// process.env.TZ = "GMT-4";//Dicen que no funca bien esto
+// Print env
+console.log("Environment: " + process.env.NODE_ENV);
 // Listen server
 app.set('port', process.env.PORT || 3000);
 app.listen(app.get('port'), function() {

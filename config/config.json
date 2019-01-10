@@ -14,10 +14,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "facepet_prod",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "tkuuvvllyewlzb",
+    "password": "7c06cde2aa73ea98faa2a7307a4959544c51e2d92e28ba1e6378677fafc5ff18",
+    "database": "dea0gigqcv7cbp",
+    "host": "ec2-54-235-77-0.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "port": "5432"
   }
 }

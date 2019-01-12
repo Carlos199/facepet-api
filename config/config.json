@@ -7,17 +7,17 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
+    "username": "postgres",
+    "password": "postgres",
     "database": "facepet_test",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "production": {
-    "username": "tkuuvvllyewlzb",
-    "password": "7c06cde2aa73ea98faa2a7307a4959544c51e2d92e28ba1e6378677fafc5ff18",
-    "database": "dea0gigqcv7cbp",
-    "host": "ec2-54-235-77-0.compute-1.amazonaws.com",
+    "username": "rxhltwcjvruxbu",
+    "password": "0ebacb77ce93a39a55e9a289a5d8420bdb66d4d242412f09485f3cf111e5d7f4",
+    "database": "d2fauih6hbltdq",
+    "host": "ec2-23-21-86-22.compute-1.amazonaws.com",
     "dialect": "postgres",
     "port": "5432"
   }

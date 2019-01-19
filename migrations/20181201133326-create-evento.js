@@ -38,6 +38,10 @@ module.exports = {
       situacion: {
         type: Sequelize.INTEGER(1)
       },
+      usuarioIdAdoptador: {
+        type: Sequelize.INTEGER(10),
+        field: "usuario_id_adoptador"
+      },
       activo: {
         type: Sequelize.INTEGER(1)
       },

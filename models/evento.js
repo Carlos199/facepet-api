@@ -36,6 +36,11 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: 0,
       type: DataTypes.INTEGER
     },
+    usuarioIdAdoptador: {
+      allowNull: true,
+      type: DataTypes.INTEGER,
+      field: "usuario_id_adoptador"
+    },
     activo: {
       defaultValue: 1,
       type: DataTypes.INTEGER

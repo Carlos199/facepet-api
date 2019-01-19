@@ -3,7 +3,11 @@ const Evento = require('../models').Evento;
 module.exports = {
     //Get all
     findAll(req, res) {
-        Evento.findAll()
+        Evento.findAll({
+            where: {
+                situacion: 0,
+            }
+        })
         .then(function(result) {
             res.status(200).json(result);
         })

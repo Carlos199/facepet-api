@@ -16,6 +16,7 @@ module.exports = function(router) {
     router.post('/usuarios', usuario.create);
     router.put('/usuarios/:id', usuario.update);
     router.delete('/usuarios/:id', usuario.delete);
+    router.post('/login', usuario.login);
 
     //Ruta de eventos
     router.get('/eventos', evento.findAll);

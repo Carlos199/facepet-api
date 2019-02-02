@@ -59,4 +59,18 @@ module.exports = {
             res.status(500).json(err);
         });
     },
+
+    login(req, res) {
+        Usuario.find({
+            correo: req.body.correo,
+            clave: req.body.clave
+        })
+            .then(function (result) {
+                res.status(200).json(result);
+            }) 
+            .catch(function (err) {
+                res.status(500).json(err);
+            });
+    },
+
 };

@@ -1,6 +1,7 @@
 const ciudad = require('../controllers/ciudad');
 const usuario = require('../controllers/usuario');
 const evento = require('../controllers/evento');
+const empresa = require('../controllers/empresa')
 
 module.exports = function(router) {
     //Ruta de ciudades
@@ -25,5 +26,12 @@ module.exports = function(router) {
     router.put('/eventos/:id', evento.update);
     router.delete('/eventos/:id', evento.delete);
     
+    //Ruta de empresa
+    router.get('/empresas', empresa.findAll);
+    router.get('/empresas/:id', empresa.findById);
+    router.post('/empresas', empresa.create);
+    router.put('/empresas/:id', empresa.update);
+    router.delete('/empresas/:id', empresa.delete);
+
     return router;
 };

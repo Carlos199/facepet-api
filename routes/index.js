@@ -2,6 +2,7 @@ const ciudad = require('../controllers/ciudad');
 const usuario = require('../controllers/usuario');
 const evento = require('../controllers/evento');
 const empresa = require('../controllers/empresa')
+const adopcion = require('../controllers/adopcion');
 
 module.exports = function(router) {
     //Ruta de ciudades
@@ -32,6 +33,13 @@ module.exports = function(router) {
     router.post('/empresas', empresa.create);
     router.put('/empresas/:id', empresa.update);
     router.delete('/empresas/:id', empresa.delete);
+
+    //Ruta de adopcion
+    router.get('/adopcion', adopcion.findAll);
+    router.get('/adopcion/:id', adopcion.findById);
+    router.post('/adopcion', adopcion.create);
+    router.put('/adopcion/:id', adopcion.update);
+    router.delete('/adopcion/:id', adopcion.delete);
 
     return router;
 };

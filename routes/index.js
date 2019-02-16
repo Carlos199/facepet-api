@@ -35,11 +35,11 @@ module.exports = function(router) {
     router.delete('/empresas/:id', empresa.delete);
 
     //Ruta de adopcion
-    router.get('/adopcion', adopcion.findAll);
-    router.get('/adopcion/:id', adopcion.findById);
-    router.post('/adopcion', adopcion.create);
-    router.put('/adopcion/:id', adopcion.update);
-    router.delete('/adopcion/:id', adopcion.delete);
+    router.get('/adopciones', adopcion.findAll);
+    router.get('/adopciones/:id', adopcion.findById);
+    router.post('/adopciones', adopcion.create);
+    router.put('/adopciones/:id', adopcion.update);
+    router.delete('/adopciones/:id', adopcion.delete);
 
     return router;
 };

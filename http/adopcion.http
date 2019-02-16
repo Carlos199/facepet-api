@@ -1,6 +1,6 @@
-http://localhost:3000/adopcion
+http://localhost:3000/adopciones
 ###
-POST http://localhost:3000/adopcion HTTP/1.1
+POST http://localhost:3000/adopciones HTTP/1.1
 content-type: application/json
 
 {
@@ -13,7 +13,7 @@ content-type: application/json
     "situacion": "0"
 }
 ###
-PUT http://localhost:3000/adopcion/1 HTTP/1.1
+PUT http://localhost:3000/adopciones/1 HTTP/1.1
 content-type: application/json
 
 {
@@ -26,4 +26,4 @@ content-type: application/json
     "situacion": "0"
 }
 ###
-DELETE http://localhost:3000/adopcion/1
+DELETE http://localhost:3000/adopciones/1

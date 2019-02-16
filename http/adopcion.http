@@ -1,0 +1,29 @@
+http://localhost:3000/adopcion
+###
+POST http://localhost:3000/adopcion HTTP/1.1
+content-type: application/json
+
+{
+	"usuario_id": 1,
+	"evento_id": 1,
+    "fecha": "",
+    "celular": "0",
+    "direccion": "address",
+    "obs": "n/a",
+    "situacion": "0"
+}
+###
+PUT http://localhost:3000/adopcion/1 HTTP/1.1
+content-type: application/json
+
+{
+	"usuario_id": 1,
+	"evento_id": 1,
+    "fecha": "",
+    "celular": "0",
+    "direccion": "address",
+    "obs": "n/a",
+    "situacion": "0"
+}
+###
+DELETE http://localhost:3000/adopcion/1

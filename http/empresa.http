@@ -1,6 +1,6 @@
 http://localhost:3000/empresas
 ###
-POST http://localhost:3000/empresas HTTP/1.1
+POST https://facepet-api.herokuapp.com/empresas HTTP/1.1
 content-type: application/json
 
 {
@@ -9,7 +9,7 @@ content-type: application/json
 	"telefono": "-25.98985",
 	"celular": "-24.98985",
 	"direccion": "km 12",
-	"imagen_url": "https://picsum.photos/200/200",
+	"imagenUrl": "https://cdn-images-1.medium.com/max/1600/1*22I1ecGbrdPjGuKYTvkdWw.png",
 	"horarios": "0"
 }
 ###

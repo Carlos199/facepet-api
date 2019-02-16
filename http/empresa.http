@@ -4,11 +4,11 @@ POST http://localhost:3000/empresas HTTP/1.1
 content-type: application/json
 
 {
-	"nombre": "1",
-	"ruc": "1",
+	"nombre": "Veterinaria san francisco",
+	"ruc": "1434334334",
 	"telefono": "-25.98985",
 	"celular": "-24.98985",
-	"direccion": "Perro viralata perdido",
+	"direccion": "km 12",
 	"imagen_url": "https://picsum.photos/200/200",
 	"horarios": "0"
 }

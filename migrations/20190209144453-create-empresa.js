@@ -27,7 +27,8 @@ module.exports = {
         type: Sequelize.STRING(220),
         allowNull: false
       },
-      imagen_url: {
+      imagenUrl: {
+        field: "imagen_url",
         type: Sequelize.STRING(220)
       },
       horarios: {

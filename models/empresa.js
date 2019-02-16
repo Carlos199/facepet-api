@@ -6,7 +6,10 @@ module.exports = (sequelize, DataTypes) => {
     telefono: DataTypes.STRING,
     celular: DataTypes.STRING,
     direccion: DataTypes.STRING,
-    imagen_url: DataTypes.STRING,
+    imagenUrl: {
+      type: DataTypes.STRING,
+      field: "imagen_url"
+    },
     horarios: DataTypes.STRING
   }, {});
   empresa.associate = function(models) {

@@ -26,10 +26,10 @@ module.exports = {
         type: Sequelize.TEXT
       },
       latitud: {
-        type: Sequelize.DECIMAL(10,6)
+        type: Sequelize.DECIMAL(20,6)
       },
       longitud: {
-        type: Sequelize.DECIMAL(10,6)
+        type: Sequelize.DECIMAL(20,6)
       },
       imagenUrl: {
         type: Sequelize.TEXT,
